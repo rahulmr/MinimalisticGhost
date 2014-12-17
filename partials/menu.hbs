@@ -1,0 +1,35 @@
+<style>
+nav.main-menu {
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 85%;    
+  max-width: 98%;
+  /*margin-bottom: auto;*/
+  text-align: center; }
+  nav.main-menu a {
+    text-decoration: none; }
+  nav.main-menu ul {
+    margin: 0; }
+  nav.main-menu li {
+    display: inline-block;
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 200; }
+    nav.main-menu li:before, nav.main-menu li:last-child:after {
+      transition: opacity 0.25s linear;
+      display: inline-block;
+      content: "●";
+      margin-left: 0.4rem;
+      margin-right: 0.4rem;
+      color: black;
+      opacity: 0.2; }
+    nav.main-menu li:hover:before, nav.main-menu li:hover:after, nav.main-menu li:hover + li:before {
+      opacity: 1; }
+</style>
+
+<nav class="main-menu"><ul>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/quicklinks/">Quick Links</a></li>    
+    {{! Add there all your static pages}}
+</ul></nav>
