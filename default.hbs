@@ -20,11 +20,11 @@
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="site-header">
-         
+        <header class="site-header">         
           <h2><a class="logo ir" href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a></h2>
         </header>
-       
+        {{! Comment this if you are not using static pages }}
+        {{> menu}}
        
            {{{body}}}
         
